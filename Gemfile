@@ -7,6 +7,7 @@ ruby '3.1.2'
 gem 'rails', '~> 7.0.3'
 
 # Use postgresql as the database for Active Record
+gem 'image_processing', '>= 1.2'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
