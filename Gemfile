@@ -27,8 +27,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console'
   gem 'faker'
+  gem 'web-console'
 end
 
 group :test do
