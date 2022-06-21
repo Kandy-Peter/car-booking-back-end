@@ -7,11 +7,11 @@ ruby '3.1.2'
 gem 'rails', '~> 7.0.3'
 
 # Use postgresql as the database for Active Record
+gem 'faker'
 gem 'image_processing', '>= 1.2'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'tzinfo-data'
-gem 'faker'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
@@ -36,10 +36,10 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'active_model_serializers'
 gem 'bullet'
 gem 'cancancan'
 gem 'devise'
 gem 'ffi'
 gem 'letter_opener'
 gem 'rubocop', '>= 1.0', '< 2.0'
-gem 'active_model_serializers'
