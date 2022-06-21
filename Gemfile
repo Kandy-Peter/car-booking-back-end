@@ -11,6 +11,7 @@ gem 'image_processing', '>= 1.2'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'tzinfo-data'
+gem 'faker'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
