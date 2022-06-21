@@ -10,8 +10,9 @@ car= Car.create({
   name:Faker::Company.name,
   model: Faker::Games::Witcher.character,
   per_day_amount:Faker::Commerce.price,
-  reserved: false
+  reserved: false,
 })
+
 car2 = Car.create({
   user_id: one.id,
   name:Faker::Company.name,

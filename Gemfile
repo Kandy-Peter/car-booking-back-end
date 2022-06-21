@@ -39,6 +39,7 @@ end
 gem 'active_model_serializers'
 gem 'bullet'
 gem 'cancancan'
+gem 'cloudinary'
 gem 'devise'
 gem 'ffi'
 gem 'letter_opener'
