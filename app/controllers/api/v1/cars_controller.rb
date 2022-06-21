@@ -23,9 +23,9 @@ class Api::V1::CarsController < ApplicationController
     @car = Car.find_by(id: params[:id])
 
     if @car.destroy
-      render json: {message: 'Car deleted successfully'}
+      render json: { message: 'Car deleted successfully' }
     else
-      render json: {message: 'An error occured, please try again'}, status: :unprocessable_entity
+      render json: { message: 'An error occured, please try again' }, status: :unprocessable_entity
     end
   end
 
