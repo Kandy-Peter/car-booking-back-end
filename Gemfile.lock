@@ -113,6 +113,8 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
+    faker (2.21.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     ffi (1.15.5-x64-mingw-ucrt)
     globalid (1.0.0)
@@ -254,6 +256,8 @@ GEM
     timeout (0.3.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2022.1)
+      tzinfo (>= 1.0.0)
     unicode-display_width (2.1.0)
     uniform_notifier (1.16.0)
     warden (1.2.9)
@@ -288,6 +292,7 @@ DEPENDENCIES
   debug
   devise
   factory_bot_rails
+  faker
   ffi
   image_processing (>= 1.2)
   letter_opener
