@@ -45,6 +45,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_20_050702) do
   create_table "cars", force: :cascade do |t|
     t.string "name"
     t.string "model"
+    t.boolean "reserved", default: false
     t.integer "per_day_amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
