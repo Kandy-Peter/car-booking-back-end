@@ -7,6 +7,7 @@ ruby '3.1.2'
 gem 'rails', '~> 7.0.3'
 
 # Use postgresql as the database for Active Record
+gem 'faker'
 gem 'image_processing', '>= 1.2'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
@@ -37,8 +38,10 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'active_model_serializers'
 gem 'bullet'
 gem 'cancancan'
+gem 'cloudinary'
 gem 'devise'
 gem 'ffi'
 gem 'letter_opener'

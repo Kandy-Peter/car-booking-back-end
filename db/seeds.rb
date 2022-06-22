@@ -10,16 +10,32 @@ User.create(name: 'Hammas', email: 'hammas@gmail.com', password: 'hammas')
 User.create(name: 'Kandy', email: 'kandy@gmail.com', password: 'kandy')
 User.create(name: 'Farouq', email: 'farouq@gmail.com', password: 'farouq')
 one= User.create({
-    name:Faker::Name.name,
-    email:"farouq@me",
-    password: 123456
+  name:Faker::Name.name,
+  email:"farouq@me",
+  password: 123456
 })
 
 car= Car.create({
-    user_id: one.id,
-    name:Faker::Company.name,
-    model: Faker::Games::Witcher.character,
-    per_day_amount:Faker::Commerce.price
+  user_id: one.id,
+  name:Faker::Company.name,
+  model: Faker::Games::Witcher.character,
+  per_day_amount:Faker::Commerce.price,
+  reserved: false,
+})
+
+car2 = Car.create({
+  user_id: one.id,
+  name:Faker::Company.name,
+  model: Faker::Games::Witcher.character,
+  per_day_amount:Faker::Commerce.price,
+  reserved: false
+})
+car3 = Car.create({
+  user_id: one.id,
+  name:Faker::Company.name,
+  model: Faker::Games::Witcher.character,
+  per_day_amount:Faker::Commerce.price,
+  reserved: true
 })
 
 5.times do
