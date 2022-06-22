@@ -12,6 +12,7 @@ gem 'image_processing', '>= 1.2'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'tzinfo-data'
+# , platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
@@ -27,6 +28,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'faker'
   gem 'web-console'
 end
 
