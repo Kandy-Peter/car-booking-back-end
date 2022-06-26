@@ -8,12 +8,7 @@
 
 User.create(name: 'Hammas', email: 'hammas@gmail.com', password: 'hammas')
 User.create(name: 'Kandy', email: 'kandy@gmail.com', password: 'kandy')
-User.create(name: 'Farouq', email: 'farouq@gmail.com', password: 'farouq')
-one= User.create({
-  name:Faker::Name.name,
-  email:"farouq@me",
-  password: 123456
-})
+one= User.create(name: 'Farouq', email: 'farouq@gmail.com', password: 'farouq')
 
 car= Car.create({
   user_id: one.id,
