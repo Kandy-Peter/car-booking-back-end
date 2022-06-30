@@ -1,4 +1,4 @@
-# YummyRecipes
+# Car Booking
 
 Book Appointments backend is rails backend application for doctor book appoinemnts. This applications take works for API endpoints and users can load, create, and delete doctors and reservations. Users need to sign up or sign in to access the API endponits. They can sign up or sign in using the API endponts.
 
@@ -31,8 +31,7 @@ cd car-booking-back-end
 ```
 Then run:
 ```
-- bundle install
-- npm install
+- bundle instal
 ```
 Create Database (Mandatory)
 
