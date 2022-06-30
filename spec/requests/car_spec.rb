@@ -69,7 +69,12 @@ RSpec.describe 'Cars', type: :request do
 
   describe 'Test for card. DELETE method' do
     before do
-      delete '/api/v1/cars/1',
+      delete '/api/v1/cars/1'
+    end
+
+    it 'Check the message on delete success' do
+      result = JSON(response.body)
+      expect(result['message']).to eq 'Car deleted successfully'
     end
   end
 end
