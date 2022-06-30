@@ -33,4 +33,23 @@ RSpec.describe 'Cars', type: :request do
       expect(response).to have_http_status(:success)
     end
   end
+
+  describe 'POST /cars' do
+      before do
+        post '/api/v1/cars/', params: {
+          car: {
+            name: 'Renault',
+            model: 'blue',
+            per_day_amount: 15,
+            car_image: 'url',
+            user_id: 1
+          }
+        }
+      end
+
+      it ' Creat a new car test (not authorized)' do
+        result = JSON(response.body)
+        expect(result.size).to eq 6
+      end
+  end
 end
