@@ -8,26 +8,27 @@ RSpec.describe 'Cars', type: :request do
   end
 
   describe 'get car list' do
-    it 'Get list of cars: test the size' do
+    it 'Check the number of cars in the list' do
       get '/api/v1/cars'
-      expect(JSON.size).to eq 2
+      result = JSON(response.body)
+      expect(result.size).to eq 2
     end
 
-    it 'Return the car name' do
+    it 'Check the car name' do
       get '/api/v1/cars'
       result = JSON(response.body)
       car = result[0]
       expect(car['name']).to eq 'Range Rover'
     end
 
-    it 'Return the car description' do
+    it 'Check th ecar model' do
       get '/api/v1/cars'
       result = JSON(response.body)
       car = result[0]
       expect(car['model']).to eq 'Sport'
     end
 
-    it 'Returns status code 200' do
+    it 'Check the status code 200' do
       get '/api/v1/cars'
       expect(response).to have_http_status(:success)
     end
