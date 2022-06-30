@@ -34,22 +34,36 @@ RSpec.describe 'Cars', type: :request do
     end
   end
 
-  describe 'POST /cars' do
+  describe 'Add car. POST method' do
       before do
         post '/api/v1/cars/', params: {
           car: {
-            name: 'Renault',
-            model: 'blue',
-            per_day_amount: 15,
-            car_image: 'url',
+            name: 'Bentley',
+            model: 'Bentayga',
+            per_day_amount: 150,
+            car_image: 'bentley.png',
             user_id: 1
           }
         }
       end
 
-      it ' Creat a new car test (not authorized)' do
+      it 'Check the api car list length' do
         result = JSON(response.body)
         expect(result.size).to eq 6
+      end
+
+      it 'Get status code 200' do
+        expect(response).to have_http_status(:success)
+      end
+
+      it 'Check the car name' do
+        result = JSON(response.body)
+        expect(result['name']).to eq 'Bentley'
+      end
+
+      it 'Check the car image link' do
+        result = JSON(response.body)
+        expect(result['car_image']).to eq 'bentley.png'
       end
   end
 end
