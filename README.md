@@ -5,6 +5,17 @@ Book Appointments backend is rails backend application for doctor book appoinemn
 ## Link to Front End
 https://github.com/Kandy-Peter/car-booking-front-end
 
+## Kanban Board
+[Kanban Board Link](https://github.com/Kandy-Peter/car-booking-back-end/projects/1)
+![Kanban Board](https://user-images.githubusercontent.com/93039359/174112295-f5748b6e-0454-49c2-8118-18288731158e.png)
+
+**We have finished this project with collaboration and team work. That's the reason we are able to finish it in this tight schedule.**
+
+#### Total Members (3)
+- Hammas Bin Saleem
+- Farouq Daif
+- Kandy Peter
+
 ## ER-Diagram
 
 ![ER Diagram](./readme_images/final-capstone-erd.png)
