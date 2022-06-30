@@ -66,4 +66,10 @@ RSpec.describe 'Cars', type: :request do
         expect(result['car_image']).to eq 'bentley.png'
       end
   end
+
+  describe 'Test for card. DELETE method' do
+    before do
+      delete '/api/v1/cars/1',
+    end
+  end
 end
