@@ -31,8 +31,7 @@ cd car-booking-back-end
 ```
 Then run:
 ```
-- bundle install
-- npm install
+- bundle instal
 ```
 Create Database (Mandatory)
 
