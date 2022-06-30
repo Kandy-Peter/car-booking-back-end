@@ -4,7 +4,7 @@ RSpec.describe User, type: :model do
   subject do
     @user = User.new(name: 'Hammas Bin Saleem', email: 'hammas@gmail.com', password: 'hammas12')
   end
-  before {subject.save}
+  before { subject.save }
 
   describe 'Testing user values' do
     it 'should return the name' do

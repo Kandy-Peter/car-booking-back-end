@@ -10,7 +10,8 @@ RSpec.describe 'Api::V1::Users', type: :request do
 
   describe 'POST /create' do
     before do
-      post '/api/v1/users', params: {:id => '1', :name => 'Hammas Saleem', :email => 'hammas@mail.com', :password => 'hammas12' }
+      post '/api/v1/users',
+           params: { id: '1', name: 'Hammas Saleem', email: 'hammas@mail.com', password: 'hammas12' }
     end
     it 'returns http success' do
       expect(response).to have_http_status(:ok)

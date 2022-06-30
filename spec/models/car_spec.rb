@@ -5,7 +5,7 @@ RSpec.describe Car, type: :model do
     @user = User.create(name: 'Hammas Bin Saleem', email: 'hammas@gmail.com', password: 'hammas12')
     @car = Car.new(name: 'Maclaren', model: 'F1', per_day_amount: 200, car_image: '123.png', user_id: @user.id)
   end
-  before {subject.save}
+  before { subject.save }
 
   describe 'Testing car values' do
     it 'should return the name' do

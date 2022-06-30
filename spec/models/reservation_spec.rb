@@ -6,7 +6,7 @@ RSpec.describe Reservation, type: :model do
     @car = Car.create(name: 'Maclaren', model: 'F1', per_day_amount: 200, car_image: '123.png', user_id: @user.id)
     @reservation = Reservation.new(city: 'FSD', date: '11-Jan-2023', car_id: @car.id, user_id: @user.id)
   end
-  before {subject.save}
+  before { subject.save }
 
   describe 'Testing reservation values' do
     it 'should return the city' do
