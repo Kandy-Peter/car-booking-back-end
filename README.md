@@ -1,6 +1,6 @@
 # Car Booking
 
-Book Appointments backend is rails backend application for doctor book appoinemnts. This applications take works for API endpoints and users can load, create, and delete doctors and reservations. Users need to sign up or sign in to access the API endponits. They can sign up or sign in using the API endponts.
+Book Appointments backend is rails backend application for car bookings. This applications take works for API endpoints and users can load, create, and delete cars and reservations. Users need to sign up or sign in to access the API endponits. They can sign up or sign in using the API endponts.
 
 ## Link to Front End
 https://github.com/Kandy-Peter/car-booking-front-end
